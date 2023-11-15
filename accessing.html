@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Accessing Elements</title>
-    <link rel="stylesheet" href="accessing.css" />
-  </head>
 
-  <body>
-    <h1>Accessing Elements</h1>
-    <h2 id="weather-head">Seattle Weather</h2>
-    <ul id="weather">
-      <li class="rain">Monday</li>
-      <li class="sun">Tuesday</li>
-      <li class="sun">Wednesday</li>
-    </ul>
+<head>
+  <title>Accessing Elements</title>
+  <link rel="stylesheet" href="accessing.css" />
+  <style>
+    .regular {
+      color: blue;
+      font-weight: 100;
+      text-decoration: underline;
+    }
 
-    <script src="accessing.js"></script>
-  </body>
+    .active {
+      color: red;
+      font-weight: 200;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id='main' data-population='192 million' data-isAwesome='true'>Accessing Elements</h1>
+  <h2 id="weather-head">Seattle Weather</h2>
+  <ul id="weather">
+    <li class="rain">Monday</li>
+    <li class="sun">Tuesday</li>
+    <li class="sun">Wednesday</li>
+  </ul>
+  <p class="intro"> </p>
+  <script src="accessing.js"></script>
+</body>
+
 </html>
